@@ -113,6 +113,6 @@ conn.mav.send(mavutil.mavlink.MAVLink_set_position_target_local_ned_message(
 finally, there is also the function moveDroneLocalPosition, its nothing very interesting, just a function that doesnt require all those fields that moveDroneLocal has, and is easier for the task of setting simple cartesian movements.
 ps. all the functions defined here perform movement in the local coordinate system, so the x,y,z system we are all used to. But there is also the global system, which uses GPS coordinates, that is, latitude, longitude and altitude.
 
-TODO: testar movLocal.py
-TODO: estudar sobre mudança de velocidade e yaw durante o voo
-TODO: as todos que surjam dps
+TODO: testar movLocal.py \
+TODO: estudar sobre mudança de velocidade e yaw durante o voo \
+TODO: as todos que surjam dps \
