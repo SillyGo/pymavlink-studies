@@ -10,12 +10,8 @@ def arm_drone(conn):
     )
 
     print("entrando no modo de verificação...")
-    while True:
-        msg = conn.recv_match(type="COMMAND_ACK", blocking=True)
-        if msg == 1:
-            break
-        else:
-            print("ARM: esperando confirmação do ACK")
+    msg = conn.recv_match(type="COMMAND_ACK", blocking=True)
+    print(msg)
 
 def disarm_drone(conn):
     conn.mav.command_long_send(
@@ -27,14 +23,16 @@ def disarm_drone(conn):
     )
 
     print("entrando no modo de verificação...")
-    while True:
-        msg = conn.recv_match(type="COMMAND_ACK", blocking=True)
-        if msg == 1:
-            break
-        else:
-            print("DISARM: esperando confirmação do ACK")
+    msg = conn.recv_match(type="COMMAND_ACK", blocking=True)
+    print(msg)
+    #while True:
+    #    msg = conn.recv_match(type="COMMAND_ACK", blocking=True)
+    #    if msg == 1:
+    #        break
+    #    else:
+    #        print("DISARM: esperando confirmação do ACK")
 
-def set_commands():     #TODO: Implementar essa função nos próximos códigos
+def set_commands(conn):     #TODO: Implementar essa função nos próximos códigos
     return
 
 CONNECTION = mavutil.mavlink_connection('udpin:localhost:14551')

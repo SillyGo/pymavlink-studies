@@ -37,16 +37,8 @@ def main():
     print(f"sistema {CONNECTION.target_system}, componente {CONNECTION.target_component}")    
     #comandos:
 
-    arm_drone(CONNECTION)
-    sleep(2)
-    #change_mode(CONNECTION, mode="GUIDED")
-    sleep(5)
-    do_takeoff(CONNECTION, height=20)
-    sleep(20)
+    change_mode(CONNECTION, "GUIDED")
 
-    change_mode(CONNECTION, mode="RTL")
-
-    disarm_drone(CONNECTION)
     return 0
 
 if __name__ == '__main__':
