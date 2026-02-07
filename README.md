@@ -16,6 +16,7 @@ how would i know the actual IP to the drone ? TODO: come back here once you know
 PROBLEM ANSWER:
 
 ### 2. ArmDisarm.py
+<<<<<<< HEAD
 code that shows the logic for arming / disarming the drone, and also receiving ACK meessages.
 ps. the same logic that goes for receiving the ACK message goes for receiving other messages, such as height.
 COMMAND_LONG_SEND:
@@ -38,3 +39,5 @@ i could remove the 'type="COMMAND_ACK"' line, that would simply make it so that 
 ps. blocking=True makes it so that the function waits until the message is received to proceed to the next line of code
 
 ### 3. takeoff.py
+=======
+>>>>>>> refs/remotes/origin/main
