@@ -15,4 +15,4 @@ connect = mavutil.mavlink_connection('udpin:localhost:14551')
 how would i know the actual IP to the drone ? TODO: come back here once you know the answer and put it down here 
 PROBLEM ANSWER:
 
-### 2. arm.py
+### 2. ArmDisarm.py
